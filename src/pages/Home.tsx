@@ -4,51 +4,38 @@ import { Card, CardContent } from "@/components/ui/card";
 import CountdownTimer from "@/components/CountdownTimer";
 import { Globe, Heart, Trophy, Users, Camera, Share2 } from "lucide-react";
 import heroBanner from "@/assets/hero-banner.jpg";
-
 const Home = () => {
-  const features = [
-    {
-      icon: <Heart className="h-8 w-8 text-festival-red" />,
-      title: "Reconnect with Your Roots",
-      description: "Missing the vibrant energy of Ganesh Utsav back home? Share your heartfelt celebrations wherever you are in the world.",
-    },
-    {
-      icon: <Camera className="h-8 w-8 text-festival-blue" />,
-      title: "Showcase Your Unique Celebrations",
-      description: "From grand community pujas in London to intimate home celebrations in New York, show us how you keep the spirit alive.",
-    },
-    {
-      icon: <Users className="h-8 w-8 text-festival-green" />,
-      title: "Be Part of a Global Community",
-      description: "Join thousands of fellow NRIs worldwide. Discover diverse traditions and foster belonging in our Ganesh family.",
-    },
-    {
-      icon: <Trophy className="h-8 w-8 text-festival-marigold" />,
-      title: "Win Exciting Prizes",
-      description: "Cultural experiences, vouchers for Indian stores, and featured recognition await the most inspiring submissions.",
-    },
-  ];
-
-  const steps = [
-    {
-      number: "1",
-      title: "Create & Capture",
-      description: "Celebrate Ganesh Utsav in your unique way and capture those special moments.",
-    },
-    {
-      number: "2",
-      title: "Submit Your Entry",
-      description: "Upload your photos, videos, or stories through our simple submission form.",
-    },
-    {
-      number: "3",
-      title: "Share & Inspire",
-      description: "Be part of our global gallery and inspire others with your devotion.",
-    },
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const features = [{
+    icon: <Heart className="h-8 w-8 text-festival-red" />,
+    title: "Reconnect with Your Roots",
+    description: "Missing the vibrant energy of Ganesh Utsav back home? Share your heartfelt celebrations wherever you are in the world."
+  }, {
+    icon: <Camera className="h-8 w-8 text-festival-blue" />,
+    title: "Showcase Your Unique Celebrations",
+    description: "From grand community pujas in London to intimate home celebrations in New York, show us how you keep the spirit alive."
+  }, {
+    icon: <Users className="h-8 w-8 text-festival-green" />,
+    title: "Be Part of a Global Community",
+    description: "Join thousands of fellow NRIs worldwide. Discover diverse traditions and foster belonging in our Ganesh family."
+  }, {
+    icon: <Trophy className="h-8 w-8 text-festival-marigold" />,
+    title: "Win Exciting Prizes",
+    description: "Cultural experiences, vouchers for Indian stores, and featured recognition await the most inspiring submissions."
+  }];
+  const steps = [{
+    number: "1",
+    title: "Create & Capture",
+    description: "Celebrate Ganesh Utsav in your unique way and capture those special moments."
+  }, {
+    number: "2",
+    title: "Submit Your Entry",
+    description: "Upload your photos, videos, or stories through our simple submission form."
+  }, {
+    number: "3",
+    title: "Share & Inspire",
+    description: "Be part of our global gallery and inspire others with your devotion."
+  }];
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="min-h-[90vh] bg-gradient-to-br from-background via-muted/30 to-background">
         <div className="container mx-auto px-4 py-12">
@@ -75,10 +62,7 @@ const Home = () => {
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link to="/gallery">
-                    <Share2 className="mr-2 h-5 w-5" />
-                    Explore Global Gallery
-                  </Link>
+                  
                 </Button>
               </div>
 
@@ -91,11 +75,7 @@ const Home = () => {
             {/* Right Image */}
             <div className="lg:col-span-2 flex justify-center lg:justify-end">
               <div className="relative">
-                <img 
-                  src={heroBanner} 
-                  alt="Global Ganesh Utsav Celebrations" 
-                  className="w-full max-w-lg h-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
-                />
+                <img src={heroBanner} alt="Global Ganesh Utsav Celebrations" className="w-full max-w-lg h-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl"></div>
               </div>
             </div>
@@ -116,8 +96,7 @@ const Home = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {features.map((feature, index) => (
-              <Card key={index} className="text-center p-6 hover:shadow-festival transition-festival bg-card/80 backdrop-blur-sm">
+            {features.map((feature, index) => <Card key={index} className="text-center p-6 hover:shadow-festival transition-festival bg-card/80 backdrop-blur-sm">
                 <CardContent className="pt-6">
                   <div className="mb-4 flex justify-center">
                     {feature.icon}
@@ -129,8 +108,7 @@ const Home = () => {
                     {feature.description}
                   </p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -148,8 +126,7 @@ const Home = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {steps.map((step, index) => (
-              <div key={index} className="text-center">
+            {steps.map((step, index) => <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-festival">
                   {step.number}
                 </div>
@@ -159,8 +136,7 @@ const Home = () => {
                 <p className="text-muted-foreground">
                   {step.description}
                 </p>
-              </div>
-            ))}
+              </div>)}
           </div>
 
           <div className="text-center mt-12">
@@ -190,8 +166,6 @@ const Home = () => {
           </Button>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
