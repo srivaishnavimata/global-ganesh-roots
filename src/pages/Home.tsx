@@ -50,42 +50,55 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section 
-        className="relative min-h-[90vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBanner})` }}
-      >
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <div className="animate-float">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              <span className="block text-festival-gradient">GLOBAL GANESH UTSAV</span>
-              <span className="block text-2xl md:text-3xl mt-2">Your Devotion, Our World!</span>
-            </h1>
-          </div>
-          
-          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
-            Unite with the Indian diaspora worldwide. Share your unique Ganesh Utsav celebrations 
-            and connect with your roots, no matter where you are.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button asChild variant="hero" size="lg">
-              <Link to="/submit">
-                <Globe className="mr-2 h-5 w-5" />
-                Participate Now!
-              </Link>
-            </Button>
-            <Button asChild variant="outline" size="lg" className="bg-white/10 text-white border-white/30 hover:bg-white/20">
-              <Link to="/gallery">
-                <Share2 className="mr-2 h-5 w-5" />
-                Explore Global Gallery
-              </Link>
-            </Button>
-          </div>
+      <section className="min-h-[90vh] bg-gradient-to-br from-background via-muted/30 to-background">
+        <div className="container mx-auto px-4 py-12">
+          <div className="grid lg:grid-cols-5 gap-8 items-center min-h-[80vh]">
+            {/* Left Content */}
+            <div className="lg:col-span-3 space-y-8">
+              <div className="animate-float">
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                  <span className="block text-festival-gradient">GLOBAL GANESH UTSAV</span>
+                  <span className="block text-2xl md:text-3xl lg:text-4xl mt-2 text-foreground">Your Devotion, Our World!</span>
+                </h1>
+              </div>
+              
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
+                Unite with the Indian diaspora worldwide. Share your unique Ganesh Utsav celebrations 
+                and connect with your roots, no matter where you are.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button asChild variant="festival" size="lg">
+                  <Link to="/submit">
+                    <Globe className="mr-2 h-5 w-5" />
+                    Participate Now!
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" size="lg">
+                  <Link to="/gallery">
+                    <Share2 className="mr-2 h-5 w-5" />
+                    Explore Global Gallery
+                  </Link>
+                </Button>
+              </div>
 
-          {/* Countdown Timer */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 max-w-md mx-auto">
-            <CountdownTimer />
+              {/* Countdown Timer */}
+              <div className="bg-card/80 backdrop-blur-sm rounded-lg p-6 max-w-md border shadow-festival">
+                <CountdownTimer />
+              </div>
+            </div>
+
+            {/* Right Image */}
+            <div className="lg:col-span-2 flex justify-center lg:justify-end">
+              <div className="relative">
+                <img 
+                  src={heroBanner} 
+                  alt="Global Ganesh Utsav Celebrations" 
+                  className="w-full max-w-lg h-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
