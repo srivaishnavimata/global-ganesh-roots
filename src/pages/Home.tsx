@@ -75,7 +75,7 @@ const Home = () => {
             {/* Right Image */}
             <div className="lg:col-span-2 flex justify-center lg:justify-end">
               <div className="relative">
-                <img src="/lovable-uploads/a5386e15-a384-479a-8484-c2ab62d1b810.png" alt="Global Ganesh Utsav 2025 - Share Your Celebrations" className="w-full max-w-lg h-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300" />
+                <img src="/lovable-uploads/0984f64b-841d-4654-9d16-0f3a2c11d0e6.png" alt="Global Ganesh Utsav 2025 - Share Your Celebrations" className="w-full max-w-lg h-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300" />
               </div>
             </div>
           </div>
