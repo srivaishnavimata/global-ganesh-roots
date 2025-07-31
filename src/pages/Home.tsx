@@ -72,11 +72,7 @@ const Home = () => {
             {/* Right Image */}
             <div className="lg:col-span-2 flex justify-center lg:justify-end">
               <div className="relative">
-                <img src="/lovable-uploads/6ed1711f-f806-4a0a-8954-129091505b39.png" alt="Global Ganesh Utsav 2025 - Share Your Celebrations" className="w-full max-w-lg h-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500 perspective-1000 rotate-y-12 hover:rotate-y-0 opacity-95 hover:opacity-100" style={{
-                filter: 'drop-shadow(20px 20px 40px rgba(0,0,0,0.3))',
-                transform: 'perspective(1000px) rotateY(-15deg) rotateX(5deg)',
-                transformStyle: 'preserve-3d'
-              }} />
+                <img src="/lovable-uploads/6ed1711f-f806-4a0a-8954-129091505b39.png" alt="Global Ganesh Utsav 2025 - Share Your Celebrations" className="w-full max-w-lg h-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500 opacity-95 hover:opacity-100" />
               </div>
             </div>
           </div>
