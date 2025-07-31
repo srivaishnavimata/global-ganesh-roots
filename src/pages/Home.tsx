@@ -44,8 +44,7 @@ const Home = () => {
             <div className="lg:col-span-3 space-y-8">
               <div className="animate-float">
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                  <span className="block text-festival-gradient">
-                </span>
+                  <span className="block text-festival-gradient">GLOBAL GANESH UTSAV 2025</span>
                   
                 </h1>
               </div>
@@ -73,11 +72,7 @@ const Home = () => {
             {/* Right Image */}
             <div className="lg:col-span-2 flex justify-center lg:justify-end">
               <div className="relative">
-                <img src="/lovable-uploads/0984f64b-841d-4654-9d16-0f3a2c11d0e6.png" alt="Global Ganesh Utsav 2025 - Share Your Celebrations" className="w-full max-w-lg h-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500 perspective-1000 rotate-y-12 hover:rotate-y-0 mix-blend-multiply opacity-90 hover:opacity-100" style={{
-                filter: 'drop-shadow(20px 20px 40px rgba(0,0,0,0.3))',
-                transform: 'perspective(1000px) rotateY(-15deg) rotateX(5deg)',
-                transformStyle: 'preserve-3d'
-              }} />
+                <img src="/lovable-uploads/6ed1711f-f806-4a0a-8954-129091505b39.png" alt="Global Ganesh Utsav 2025 - Share Your Celebrations" className="w-full max-w-lg h-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500 opacity-95 hover:opacity-100 mix-blend-multiply" />
               </div>
             </div>
           </div>
