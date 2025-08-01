@@ -70,10 +70,7 @@ const Home = () => {
               </Button>
               
               {/* Unity badge */}
-              <div className="bg-white rounded-lg p-4 shadow-sm border border-orange-200 max-w-xs">
-                <div className="text-orange-600 font-semibold">Unity</div>
-                <div className="text-sm text-gray-600">in Diversity</div>
-              </div>
+              
             </div>
 
             {/* Right Content */}
