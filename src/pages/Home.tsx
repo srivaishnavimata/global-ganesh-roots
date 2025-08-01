@@ -79,25 +79,14 @@ const Home = () => {
             {/* Right Content */}
             <div className="relative">
               <div className="text-right mb-8">
-                <h2 className="text-4xl lg:text-5xl font-bold">
-                  <span className="text-teal-600 block">GLOBAL</span>
-                  <span className="text-orange-500 block">GANESH</span>
-                  <span className="text-teal-600 block text-3xl lg:text-4xl">UTSAV 2025</span>
-                </h2>
+                
               </div>
               
               <div className="relative flex justify-center">
-                <img 
-                  src="/lovable-uploads/a8c0a101-82dd-4ebc-bf9c-f1517e0100c1.png" 
-                  alt="Ganesh celebration character" 
-                  className="w-80 h-auto object-contain"
-                />
+                <img src="/lovable-uploads/a8c0a101-82dd-4ebc-bf9c-f1517e0100c1.png" alt="Ganesh celebration character" className="w-80 h-auto object-contain" />
                 
                 {/* Share your celebrations badge */}
-                <div className="absolute bottom-0 right-0 bg-orange-500 text-white rounded-2xl px-6 py-4 transform rotate-3 shadow-lg">
-                  <div className="text-lg font-bold">SHARE YOUR</div>
-                  <div className="text-lg font-bold">CELEBRATIONS</div>
-                </div>
+                
               </div>
             </div>
           </div>
