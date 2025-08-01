@@ -83,7 +83,7 @@ const Home = () => {
               </div>
               
               <div className="relative flex justify-center">
-                <img src="/lovable-uploads/a8c0a101-82dd-4ebc-bf9c-f1517e0100c1.png" alt="Ganesh celebration character" className="w-80 h-auto object-contain" />
+                <img src="/lovable-uploads/7c62add0-7968-4c50-a3ae-5db86d09470f.png" alt="Ganesh celebration character" className="w-80 h-auto object-contain" />
                 
                 {/* Share your celebrations badge */}
                 
