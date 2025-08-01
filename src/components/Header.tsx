@@ -17,32 +17,27 @@ const Header = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 w-full bg-gradient-to-r from-orange-500 to-red-500 text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <Calendar className="h-8 w-8 text-primary" />
-            <div className="flex flex-col">
-              <span className="text-festival-gradient text-lg font-bold leading-tight">
-                GLOBAL GANESH
-              </span>
-              <span className="text-xs text-muted-foreground leading-tight">
-                UTSAV CONTEST
-              </span>
-            </div>
+            <Calendar className="h-8 w-8 text-white" />
+            <span className="text-lg font-bold text-white">
+              Global Ganesh Utsav
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                   isActive(item.path)
-                    ? "text-primary border-b-2 border-primary"
-                    : "text-muted-foreground"
+                    ? "bg-white text-orange-500"
+                    : "text-white hover:bg-white/20"
                 }`}
               >
                 {item.label}
@@ -50,11 +45,9 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:flex">
-            <Button asChild variant="festival" size="sm">
-              <Link to="/submit">Participate Now!</Link>
-            </Button>
+          {/* Mobile Navigation is hidden in reference */}
+          <div className="md:hidden">
+            {/* Keep mobile menu for functionality but style to match */}
           </div>
 
           {/* Mobile Menu Button */}

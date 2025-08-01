@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import CountdownTimer from "@/components/CountdownTimer";
-import { Globe, Heart, Trophy, Users, Camera, Share2 } from "lucide-react";
+import { Globe, Heart, Trophy, Users, Camera, Share2, Calendar } from "lucide-react";
 import heroBanner from "@/assets/hero-banner.jpg";
 const Home = () => {
   const features = [{
@@ -35,46 +35,89 @@ const Home = () => {
     title: "Share & Inspire",
     description: "Be part of our global gallery and inspire others with your devotion."
   }];
-  return <div className="min-h-screen">
+  return <div className="min-h-screen bg-orange-50">
       {/* Hero Section */}
-      <section className="min-h-[90vh] bg-gradient-to-br from-background via-muted/30 to-background">
-        <div className="container mx-auto px-4 py-12">
-          <div className="grid lg:grid-cols-5 gap-8 items-center min-h-[80vh]">
+      <section className="relative min-h-[90vh] bg-orange-50 overflow-hidden">
+        {/* Decorative circles */}
+        <div className="absolute top-20 right-20 w-32 h-32 bg-orange-200 rounded-full opacity-30"></div>
+        <div className="absolute bottom-40 left-10 w-24 h-24 bg-yellow-200 rounded-full opacity-40"></div>
+        <div className="absolute bottom-20 right-40 w-20 h-20 bg-orange-300 rounded-full opacity-30"></div>
+        
+        <div className="container mx-auto px-4 py-12 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
             {/* Left Content */}
-            <div className="lg:col-span-3 space-y-8">
-              <div className="animate-float">
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                  <span className="block text-festival-gradient">GLOBAL GANESH UTSAV 2025</span>
-                  
-                </h1>
+            <div className="space-y-8">
+              {/* Small badge */}
+              <div className="flex items-center gap-2 text-orange-600">
+                <Calendar className="h-5 w-5" />
+                <span className="text-sm font-medium">Global Celebration 2025</span>
               </div>
               
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                <span className="text-orange-600 block">Celebrate Ganesh</span>
+                <span className="text-orange-600 block">Utsav Globally!</span>
+              </h1>
               
-              
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild variant="festival" size="lg">
-                  <Link to="/submit">
-                    <Globe className="mr-2 h-5 w-5" />
-                    Participate Now!
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg">
-                  
-                </Button>
-              </div>
-
               {/* Countdown Timer */}
-              <div className="bg-card/80 backdrop-blur-sm rounded-lg p-6 max-w-md border shadow-festival">
+              <div className="bg-orange-100 rounded-2xl p-6 max-w-md border border-orange-200">
                 <CountdownTimer />
               </div>
-            </div>
-
-            {/* Right Image */}
-            <div className="lg:col-span-2 flex justify-center lg:justify-end">
-              <div className="relative">
-                <img src="/lovable-uploads/6ed1711f-f806-4a0a-8954-129091505b39.png" alt="Global Ganesh Utsav 2025 - Share Your Celebrations" className="w-full max-w-lg h-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500 opacity-95 hover:opacity-100 mix-blend-multiply" />
+              
+              <Button asChild className="bg-orange-500 hover:bg-orange-600 text-white rounded-lg px-8 py-3 text-lg font-semibold">
+                <Link to="/submit">
+                  Participate Now! →
+                </Link>
+              </Button>
+              
+              {/* Unity badge */}
+              <div className="bg-white rounded-lg p-4 shadow-sm border border-orange-200 max-w-xs">
+                <div className="text-orange-600 font-semibold">Unity</div>
+                <div className="text-sm text-gray-600">in Diversity</div>
               </div>
             </div>
+
+            {/* Right Content */}
+            <div className="relative">
+              <div className="text-right mb-8">
+                <h2 className="text-4xl lg:text-5xl font-bold">
+                  <span className="text-teal-600 block">GLOBAL</span>
+                  <span className="text-orange-500 block">GANESH</span>
+                  <span className="text-teal-600 block text-3xl lg:text-4xl">UTSAV 2025</span>
+                </h2>
+              </div>
+              
+              <div className="relative flex justify-center">
+                <img 
+                  src="/lovable-uploads/a8c0a101-82dd-4ebc-bf9c-f1517e0100c1.png" 
+                  alt="Ganesh celebration character" 
+                  className="w-80 h-auto object-contain"
+                />
+                
+                {/* Share your celebrations badge */}
+                <div className="absolute bottom-0 right-0 bg-orange-500 text-white rounded-2xl px-6 py-4 transform rotate-3 shadow-lg">
+                  <div className="text-lg font-bold">SHARE YOUR</div>
+                  <div className="text-lg font-bold">CELEBRATIONS</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Bottom feature cards */}
+          <div className="grid md:grid-cols-3 gap-6 mt-16">
+            <Card className="border-2 border-orange-200 rounded-2xl p-6 bg-white/80">
+              <h3 className="font-bold text-orange-600 text-lg mb-2">Open to All</h3>
+              <p className="text-gray-600">NRIs Worldwide</p>
+            </Card>
+            
+            <Card className="border-2 border-orange-200 rounded-2xl p-6 bg-white/80">
+              <h3 className="font-bold text-orange-600 text-lg mb-2">Easy Upload</h3>
+              <p className="text-gray-600">Photos & Videos</p>
+            </Card>
+            
+            <Card className="border-2 border-yellow-200 rounded-2xl p-6 bg-white/80">
+              <h3 className="font-bold text-orange-600 text-lg mb-2">Global Unity</h3>
+              <p className="text-gray-600">Cultural Bridge</p>
+            </Card>
           </div>
         </div>
       </section>
