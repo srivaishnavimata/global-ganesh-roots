@@ -77,7 +77,7 @@ const Home = () => {
               </div>
               
               <Button 
-                onClick={() => scrollToSection('submit')}
+                onClick={() => scrollToSection('participate')}
                 className="bg-orange-500 hover:bg-orange-600 text-white rounded-lg px-8 py-3 text-lg font-semibold"
               >
                 Participate Now! →
@@ -125,7 +125,7 @@ const Home = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-16">
+      <section id="participate" className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-festival-gradient mb-4">How to Participate</h2>
@@ -152,7 +152,7 @@ const Home = () => {
 
           <div className="text-center mt-12">
             <Button 
-              onClick={() => scrollToSection('submit')}
+              onClick={() => scrollToSection('gallery')}
               variant="festival" 
               size="lg"
             >
@@ -162,75 +162,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Submit Entry Section */}
-      <section id="submit" className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-festival-gradient mb-4">Submit Your Entry</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Share your Ganesh Utsav celebration with the world. Upload photos, videos, or share your story.
-            </p>
-          </div>
-
-          <div className="max-w-2xl mx-auto">
-            <Card className="p-8">
-              <CardContent className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">Full Name</Label>
-                    <Input id="name" placeholder="Enter your full name" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email Address</Label>
-                    <Input id="email" type="email" placeholder="Enter your email" />
-                  </div>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="location">Current Location</Label>
-                    <Input id="location" placeholder="City, Country" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="phone">Phone Number</Label>
-                    <Input id="phone" placeholder="Your phone number" />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="story">Your Ganesh Utsav Story</Label>
-                  <Textarea 
-                    id="story" 
-                    placeholder="Tell us about your celebration, traditions, and what Ganesh Utsav means to you..."
-                    className="min-h-[120px]"
-                  />
-                </div>
-
-                <div className="space-y-4">
-                  <Label>Upload Photos/Videos</Label>
-                  <div className="border-2 border-dashed border-muted-foreground/25 rounded-lg p-8 text-center hover:border-primary/50 transition-colors">
-                    <Upload className="h-12 w-12 mx-auto mb-4 text-muted-foreground" />
-                    <p className="text-lg font-medium mb-2">Drop files here or click to upload</p>
-                    <p className="text-sm text-muted-foreground">
-                      Support for images (JPG, PNG) and videos (MP4, MOV). Max size: 50MB per file.
-                    </p>
-                    <Button variant="outline" className="mt-4">
-                      <FileText className="h-4 w-4 mr-2" />
-                      Choose Files
-                    </Button>
-                  </div>
-                </div>
-
-                <div className="text-center pt-4">
-                  <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3">
-                    Submit Your Entry
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* Global Gallery Section */}
       <section id="gallery" className="py-16">
@@ -253,7 +184,7 @@ const Home = () => {
                 Submit your entry to be featured in our global gallery.
               </p>
               <Button 
-                onClick={() => scrollToSection('submit')}
+                onClick={() => scrollToSection('participate')}
                 variant="outline"
                 className="border-orange-500 text-orange-500 hover:bg-orange-50"
               >
@@ -275,7 +206,7 @@ const Home = () => {
             Ganesh Utsav globally. Your story matters.
           </p>
           <Button 
-            onClick={() => scrollToSection('submit')}
+            onClick={() => scrollToSection('participate')}
             variant="outline" 
             size="lg" 
             className="bg-white text-festival-red border-white hover:bg-white/90"
