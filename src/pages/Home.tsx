@@ -9,9 +9,14 @@ import heroBanner from "@/assets/hero-banner.jpg";
 
 const Home = () => {
   const scrollToSection = (sectionId: string) => {
+    console.log('Attempting to scroll to section:', sectionId);
     const element = document.getElementById(sectionId);
+    console.log('Found element:', element);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      console.log('Scrolling to element');
+    } else {
+      console.log('Element not found!');
     }
   };
 
