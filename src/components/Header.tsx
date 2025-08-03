@@ -8,7 +8,7 @@ const Header = () => {
   const navItems = [
     { section: "hero", label: "Home" },
     { section: "about", label: "About Contest" },
-    { section: "submit", label: "Submit Entry" },
+    { section: "participate", label: "Submit Entry" },
     { section: "gallery", label: "Global Gallery" },
   ];
 
