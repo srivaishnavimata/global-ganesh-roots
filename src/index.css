@@ -9,55 +9,55 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 45 100% 98%;
-    --foreground: 30 25% 15%;
+    --background: 120 40% 97%;
+    --foreground: 140 30% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 30 25% 15%;
+    --card-foreground: 140 30% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 30 25% 15%;
+    --popover-foreground: 140 30% 15%;
 
-    /* Saffron-inspired primary color */
-    --primary: 35 95% 55%;
+    /* Forest green primary color */
+    --primary: 140 60% 35%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 40 100% 65%;
+    --primary-glow: 130 50% 45%;
 
-    /* Deep festival red for secondary */
-    --secondary: 5 85% 60%;
+    /* Sage green for secondary */
+    --secondary: 120 25% 55%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Royal blue accent */
-    --accent: 230 75% 60%;
+    /* Emerald accent */
+    --accent: 155 70% 45%;
     --accent-foreground: 0 0% 100%;
 
-    /* Emerald green for success states */
-    --success: 135 70% 50%;
+    /* Deep green for success states */
+    --success: 135 70% 40%;
     --success-foreground: 0 0% 100%;
 
-    --muted: 45 50% 92%;
-    --muted-foreground: 30 15% 40%;
+    --muted: 120 30% 92%;
+    --muted-foreground: 140 20% 40%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 45 30% 85%;
-    --input: 45 30% 85%;
-    --ring: 35 95% 55%;
+    --border: 120 25% 85%;
+    --input: 120 25% 85%;
+    --ring: 140 60% 35%;
 
     --radius: 0.75rem;
 
-    /* Custom festival colors */
-    --festival-marigold: 45 100% 60%;
-    --festival-saffron: 35 95% 55%;
-    --festival-red: 5 85% 60%;
-    --festival-blue: 230 75% 60%;
-    --festival-green: 135 70% 50%;
+    /* Custom nature colors */
+    --festival-marigold: 130 50% 45%;
+    --festival-saffron: 140 60% 35%;
+    --festival-red: 155 70% 45%;
+    --festival-blue: 180 60% 50%;
+    --festival-green: 140 60% 35%;
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
     --gradient-festival: linear-gradient(135deg, hsl(var(--festival-saffron)), hsl(var(--festival-marigold)));
-    --gradient-cultural: linear-gradient(45deg, hsl(var(--festival-red)), hsl(var(--festival-blue)));
+    --gradient-cultural: linear-gradient(45deg, hsl(var(--festival-green)), hsl(var(--festival-blue)));
 
     /* Shadows */
     --shadow-festival: 0 10px 30px -10px hsl(var(--primary) / 0.3);
@@ -77,36 +77,36 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 30 25% 8%;
-    --foreground: 45 100% 95%;
+    --background: 140 30% 8%;
+    --foreground: 120 40% 95%;
 
-    --card: 30 25% 10%;
-    --card-foreground: 45 100% 95%;
+    --card: 140 30% 10%;
+    --card-foreground: 120 40% 95%;
 
-    --popover: 30 25% 10%;
-    --popover-foreground: 45 100% 95%;
+    --popover: 140 30% 10%;
+    --popover-foreground: 120 40% 95%;
 
-    --primary: 40 100% 65%;
-    --primary-foreground: 30 25% 8%;
+    --primary: 130 50% 55%;
+    --primary-foreground: 140 30% 8%;
 
-    --secondary: 10 70% 45%;
+    --secondary: 120 40% 35%;
     --secondary-foreground: 0 0% 100%;
 
-    --accent: 230 60% 55%;
+    --accent: 155 60% 45%;
     --accent-foreground: 0 0% 100%;
 
-    --success: 135 60% 45%;
+    --success: 135 60% 40%;
     --success-foreground: 0 0% 100%;
 
-    --muted: 30 20% 15%;
-    --muted-foreground: 45 20% 65%;
+    --muted: 140 20% 15%;
+    --muted-foreground: 120 30% 65%;
 
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 20% 18%;
-    --input: 30 20% 18%;
-    --ring: 40 100% 65%;
+    --border: 140 20% 18%;
+    --input: 140 20% 18%;
+    --ring: 130 50% 55%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;

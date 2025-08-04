@@ -21,7 +21,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-gradient-to-r from-orange-500 to-red-500 text-white">
+    <header className="sticky top-0 z-50 w-full bg-gradient-to-r from-primary to-primary-glow text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -71,7 +71,7 @@ const Header = () => {
                   {item.label}
                 </button>
               ))}
-              <Button onClick={() => scrollToSection('submit')} variant="outline" size="sm" className="w-fit bg-white text-orange-500 border-white hover:bg-white/90">
+              <Button onClick={() => scrollToSection('participate')} variant="outline" size="sm" className="w-fit bg-white text-primary border-white hover:bg-white/90">
                 Participate Now!
               </Button>
             </nav>
