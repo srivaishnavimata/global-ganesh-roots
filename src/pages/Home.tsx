@@ -163,9 +163,7 @@ const Home = () => {
             Join thousands of participants from around the world in celebrating 
             Ganesh Utsav globally. Your story matters.
           </p>
-          <Button onClick={() => scrollToSection('participate')} variant="outline" size="lg" className="bg-white text-festival-red border-white hover:bg-white/90">
-            Submit Your Entry Today
-          </Button>
+          
         </div>
       </section>
     </div>;
