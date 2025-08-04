@@ -62,7 +62,7 @@ const Home = () => {
         <div className="absolute bottom-20 right-40 w-20 h-20 bg-orange-300 rounded-full opacity-30"></div>
         
         <div className="container mx-auto px-4 py-12 relative z-10">
-          <div className="min-h-[80vh] bg-cover bg-center bg-no-repeat rounded-2xl" style={{backgroundImage: `url('/lovable-uploads/7673e813-6ef7-4779-8d35-9a4fcaafb629.png')`}}>
+          <div className="min-h-[80vh] bg-cover bg-center bg-no-repeat rounded-2xl" style={{backgroundImage: `url('/lovable-uploads/15c207b9-477e-400d-bbbf-54789cbc53d4.png')`}}>
           </div>
         </div>
       </section>
