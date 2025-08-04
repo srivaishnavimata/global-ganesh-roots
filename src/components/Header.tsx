@@ -38,7 +38,7 @@ const Header = () => {
               <button
                 key={item.section}
                 onClick={() => scrollToSection(item.section)}
-                className="px-4 py-2 rounded-lg text-sm font-medium transition-colors text-white hover:bg-white/20"
+                className="px-4 py-2 rounded-lg text-sm font-medium transition-colors text-white hover:bg-white hover:text-primary"
               >
                 {item.label}
               </button>
