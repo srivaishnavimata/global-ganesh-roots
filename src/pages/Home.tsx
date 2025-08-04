@@ -62,39 +62,7 @@ const Home = () => {
         <div className="absolute bottom-20 right-40 w-20 h-20 bg-orange-300 rounded-full opacity-30"></div>
         
         <div className="container mx-auto px-4 py-12 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
-            {/* Left Content */}
-            <div className="space-y-8">
-              {/* Small badge */}
-              <div className="flex items-center gap-2 text-orange-600">
-                <Calendar className="h-5 w-5" />
-                <span className="text-sm font-medium">Global Celebration 2025</span>
-              </div>
-              
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                <span className="text-orange-600 block">Celebrate Ganesh</span>
-                <span className="text-orange-600 block">Utsav Globally!</span>
-              </h1>
-              
-              {/* Countdown Timer */}
-              <div className="bg-orange-100 rounded-2xl p-6 max-w-md border border-orange-200">
-                <CountdownTimer />
-              </div>
-              
-              <Button 
-                onClick={() => scrollToSection('participate')}
-                className="bg-orange-500 hover:bg-orange-600 text-white rounded-lg px-8 py-3 text-lg font-semibold"
-              >
-                Participate Now! →
-              </Button>
-            </div>
-
-            {/* Right Content */}
-            <div className="relative">
-              <div className="relative flex justify-center">
-                <img src="/lovable-uploads/7c62add0-7968-4c50-a3ae-5db86d09470f.png" alt="Ganesh celebration character" className="w-80 h-auto object-contain" />
-              </div>
-            </div>
+          <div className="min-h-[80vh] bg-cover bg-center bg-no-repeat rounded-2xl" style={{backgroundImage: `url('/lovable-uploads/7673e813-6ef7-4779-8d35-9a4fcaafb629.png')`}}>
           </div>
         </div>
       </section>
