@@ -4,6 +4,7 @@ import { Menu, X, Calendar } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("hero");
 
   const navItems = [
     { section: "hero", label: "Home" },
@@ -17,6 +18,7 @@ const Header = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    setActiveSection(sectionId);
     setIsMenuOpen(false);
   };
 
@@ -38,7 +40,11 @@ const Header = () => {
               <button
                 key={item.section}
                 onClick={() => scrollToSection(item.section)}
-                className="px-4 py-2 rounded-lg text-sm font-medium transition-colors text-white hover:bg-white hover:text-primary"
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                  activeSection === item.section 
+                    ? 'bg-white text-primary' 
+                    : 'text-white hover:bg-white hover:text-primary'
+                }`}
               >
                 {item.label}
               </button>
