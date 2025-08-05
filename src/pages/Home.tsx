@@ -34,15 +34,15 @@ const Home = () => {
     description: "Cultural experiences, vouchers for Indian stores, and featured recognition await the most inspiring submissions."
   }];
   const shareSteps = [{
-    icon: <Camera className="h-8 w-8 text-white" />,
+    icon: <Camera className="h-10 w-10 text-white" />,
     title: "Record a Reel or Photo",
     description: "Capture your Ganesh Chaturthi celebration moments"
   }, {
-    icon: <Hash className="h-12 w-12 text-white" />,
+    icon: <Hash className="h-10 w-10 text-white" />,
     title: "Use the Hashtag",
     description: "Post on Instagram using #GlobalGaneshUtsav"
   }, {
-    icon: <AtSign className="h-12 w-12 text-white" />,
+    icon: <AtSign className="h-10 w-10 text-white" />,
     title: "Tag Us",
     description: "Tag our Instagram handle to get featured on our site"
   }];
@@ -111,11 +111,11 @@ const Home = () => {
               </div>)}
           </div>
 
-          <div className="text-center mt-12">
+          {/* <div className="text-center mt-12">
             <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-3 text-lg font-semibold">
               Create a Reel Now
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -140,9 +140,9 @@ const Home = () => {
                 We're preparing to showcase beautiful celebrations from around the world. 
                 Submit your entry to be featured in our global gallery.
               </p>
-              <Button onClick={() => scrollToSection('participate')} variant="outline" className="border-orange-500 text-orange-500 hover:bg-orange-50">
+              {/* <Button onClick={() => scrollToSection('participate')} variant="outline" className="border-orange-500 text-orange-500 hover:bg-orange-50">
                 Submit Your Celebration
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
