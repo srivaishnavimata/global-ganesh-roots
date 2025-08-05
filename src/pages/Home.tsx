@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import CountdownTimer from "@/components/CountdownTimer";
-import { Globe, Heart, Trophy, Users, Camera, Share2, Calendar, Upload, FileText, Image } from "lucide-react";
+import { Globe, Heart, Trophy, Users, Camera, Share2, Calendar, Upload, FileText, Image, Hash, AtSign } from "lucide-react";
 import heroBanner from "@/assets/hero-banner.jpg";
 const Home = () => {
   const scrollToSection = (sectionId: string) => {
@@ -33,18 +33,18 @@ const Home = () => {
     title: "Win Exciting Prizes",
     description: "Cultural experiences, vouchers for Indian stores, and featured recognition await the most inspiring submissions."
   }];
-  const steps = [{
-    number: "1",
-    title: "Create & Capture",
-    description: "Celebrate Ganesh Utsav in your unique way and capture those special moments."
+  const shareSteps = [{
+    icon: <Camera className="h-12 w-12 text-white" />,
+    title: "Record a Reel or Photo",
+    description: "Capture your Ganesh Chaturthi celebration moments"
   }, {
-    number: "2",
-    title: "Submit Your Entry",
-    description: "Upload your photos, videos, or stories through our simple submission form."
+    icon: <Hash className="h-12 w-12 text-white" />,
+    title: "Use the Hashtag",
+    description: "Post on Instagram using #GlobalGaneshUtsav"
   }, {
-    number: "3",
-    title: "Share & Inspire",
-    description: "Be part of our global gallery and inspire others with your devotion."
+    icon: <AtSign className="h-12 w-12 text-white" />,
+    title: "Tag Us",
+    description: "Tag our Instagram handle to get featured on our site"
   }];
   return <div className="min-h-screen bg-orange-50">
       {/* Hero Section */}
@@ -90,32 +90,31 @@ const Home = () => {
         </div>
       </section>
 
-      {/* How It Works Section */}
+      {/* How to Share Your Celebration Section */}
       <section id="participate" className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-festival-gradient mb-4">How to Participate</h2>
-            <p className="text-lg text-muted-foreground">
-              Simple steps to share your Ganesh Utsav celebration
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">How to Share Your Celebration</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {steps.map((step, index) => <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-festival">
-                  {step.number}
+            {shareSteps.map((step, index) => <div key={index} className="text-center">
+                <div className="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  {step.icon}
                 </div>
-                <h3 className="text-xl font-semibold mb-3">
+                <h3 className="text-xl font-bold text-primary mb-3">
                   {step.title}
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-lg">
                   {step.description}
                 </p>
               </div>)}
           </div>
 
           <div className="text-center mt-12">
-            
+            <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-3 text-lg font-semibold">
+              Create a Reel Now
+            </Button>
           </div>
         </div>
       </section>
