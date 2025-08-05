@@ -25,7 +25,6 @@ const Home = () => {
     title: "Reconnect with Your Roots",
     description: "Missing the vibrant energy of Ganesh Utsav back home? Share your heartfelt celebrations wherever you are in the world."
   }, {
-    icon: <Camera className="h-8 w-8 text-festival-blue" />,
     title: "Showcase Your Unique Celebrations",
     description: "From grand community pujas in London to intimate home celebrations in New York, show us how you keep the spirit alive."
   }, {
