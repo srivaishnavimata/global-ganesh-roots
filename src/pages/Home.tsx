@@ -21,7 +21,7 @@ const Home = () => {
     }
   };
   const features = [{
-    icon: <Heart className="h-8 w-8 text-festival-red" />,
+    icon: <Heart className="h-8 w-8 text-primary" />,
     title: "Reconnect with Your Roots",
     description: "Missing the vibrant energy of Ganesh Utsav back home? Share your heartfelt celebrations wherever you are in the world."
   }, {
