@@ -34,7 +34,7 @@ const Home = () => {
     description: "Cultural experiences, vouchers for Indian stores, and featured recognition await the most inspiring submissions."
   }];
   const shareSteps = [{
-    icon: <Camera className="h-12 w-12 text-white" />,
+    icon: <Camera className="h-8 w-8 text-white" />,
     title: "Record a Reel or Photo",
     description: "Capture your Ganesh Chaturthi celebration moments"
   }, {
