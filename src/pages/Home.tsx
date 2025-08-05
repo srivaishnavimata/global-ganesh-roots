@@ -60,7 +60,7 @@ const Home = () => {
         
         <div className="container mx-auto px-4 py-12 relative z-10">
           <div className="min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] lg:min-h-[80vh] bg-cover bg-center bg-no-repeat rounded-lg sm:rounded-xl md:rounded-2xl w-full" style={{
-          backgroundImage: `url('/lovable-uploads/15c207b9-477e-400d-bbbf-54789cbc53d4.png')`
+          backgroundImage: `url('/lovable-uploads/65395657-0cc9-4080-92ef-7f0da743ded6.png')`
         }}>
           </div>
         </div>
