@@ -59,7 +59,7 @@ const Home = () => {
           backgroundImage: `url('/lovable-uploads/65395657-0cc9-4080-92ef-7f0da743ded6.png')`
         }}>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white text-center px-4 drop-shadow-2xl">
-              Global Ganesh Utsav 2025
+              Celebrate Global Ganesh Utsav
             </h1>
           </div>
         </div>
