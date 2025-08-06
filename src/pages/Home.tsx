@@ -55,9 +55,7 @@ const Home = () => {
         <div className="absolute bottom-20 right-40 w-20 h-20 bg-orange-300 rounded-full opacity-30"></div>
         
         <div className="container mx-auto px-4 py-12 relative z-10">
-          <div className="min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] lg:min-h-[80vh] bg-cover bg-center bg-no-repeat rounded-lg sm:rounded-xl md:rounded-2xl w-full relative flex items-center justify-center" style={{
-          backgroundImage: `url('/lovable-uploads/65395657-0cc9-4080-92ef-7f0da743ded6.png')`
-        }}>
+          <div className="min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] lg:min-h-[80vh] bg-cover bg-center bg-no-repeat rounded-lg sm:rounded-xl md:rounded-2xl w-full relative flex items-center justify-center md:bg-[url('/lovable-uploads/65395657-0cc9-4080-92ef-7f0da743ded6.png')] bg-[url('/lovable-uploads/cab2d7d9-1ad5-4d2a-9f4d-a4f664ea6466.png')]">
             <div className="flex items-center w-full h-full">
               <div className="w-full md:w-1/2 lg:w-1/2 px-4 py-8 bg-white/70 rounded-lg backdrop-blur-md">
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-orange-600 text-left drop-shadow-2xl">
