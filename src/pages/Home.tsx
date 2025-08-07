@@ -61,9 +61,7 @@ const Home = () => {
                 <h1 className="text-2xl md:text-6xl lg:text-7xl font-bold text-orange-600 text-left drop-shadow-2xl">
                   Celebrate Global <br /> Ganesh Utsav
                 </h1>
-                <p className="mt-4 text-lg text-muted-foreground font-bold">
-                  Share your unique Ganesh Chaturthi moments with the world. Be a part of a global celebration that transcends borders and connects hearts.
-                </p>
+                
               </div>
             </div>
             
@@ -124,7 +122,7 @@ const Home = () => {
             <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-3 text-lg font-semibold">
               Create a Reel Now
             </Button>
-          </div> */}
+           </div> */}
         </div>
       </section>
 
@@ -151,7 +149,7 @@ const Home = () => {
               </p>
               {/* <Button onClick={() => scrollToSection('participate')} variant="outline" className="border-orange-500 text-orange-500 hover:bg-orange-50">
                 Submit Your Celebration
-              </Button> */}
+               </Button> */}
             </div>
           </div>
         </div>
