@@ -61,7 +61,7 @@ const Home = () => {
                 <h1 className="text-2xl md:text-6xl lg:text-7xl font-bold text-orange-600 text-left drop-shadow-2xl">
                   Celebrate Global <br /> Ganesh Utsav
                 </h1>
-                <p className="mt-4 text-lg text-muted-foreground font-bold">
+                <p className="mt-4 text-lg text-muted-foreground font-bold hidden md:block">
                   Share your unique Ganesh Chaturthi moments with the world. Be a part of a global celebration that transcends borders and connects hearts.
                 </p>
               </div>
