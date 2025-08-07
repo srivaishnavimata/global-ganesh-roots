@@ -48,7 +48,7 @@ const Home = () => {
   }];
   return <div className="min-h-screen bg-orange-50">
       {/* Hero Section */}
-      <section id="hero" className="relative min-h-[90vh] bg-orange-50 overflow-hidden">
+      <section id="hero" className="relative h-50 md:min-h-[90vh] bg-orange-50 overflow-hidden">
         {/* Decorative circles */}
         <div className="absolute top-20 right-20 w-32 h-32 bg-orange-200 rounded-full opacity-30 hidden md:block"></div>
         <div className="absolute bottom-40 left-10 w-24 h-24 bg-yellow-200 rounded-full opacity-40 hidden md:block"></div>
