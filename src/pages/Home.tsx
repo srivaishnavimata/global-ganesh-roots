@@ -57,7 +57,7 @@ const Home = () => {
         <div className="container mx-auto px-4 py-12 relative z-10">
           <div className="min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] lg:min-h-[80vh] bg-cover bg-center bg-no-repeat rounded-lg sm:rounded-xl md:rounded-2xl w-full relative flex items-center justify-center md:bg-[url('/lovable-uploads/65395657-0cc9-4080-92ef-7f0da743ded6.png')] bg-[url('/lovable-uploads/23d77528-61aa-41bb-8110-ce5fce1e52e4.png')]">
             <div className="flex items-center w-full h-full">
-              <div className="w-full md:w-1/2 lg:w-1/2 px-4 py-8 backdrop-blur-md bg-transparent rounded">
+              <div className="w-1/2 md:w-1/2 lg:w-1/2 px-4 py-8 backdrop-blur-md bg-transparent rounded">
                 <h1 className="md:text-6xl lg:text-7xl text-orange-600 text-left text-xl font-bold">
                   Celebrate Global <br /> Ganesh Utsav
                 </h1>
