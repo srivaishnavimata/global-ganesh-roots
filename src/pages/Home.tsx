@@ -58,7 +58,7 @@ const Home = () => {
           <div className="min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] lg:min-h-[80vh] bg-cover bg-center bg-no-repeat rounded-lg sm:rounded-xl md:rounded-2xl w-full relative flex items-center justify-center md:bg-[url('/lovable-uploads/65395657-0cc9-4080-92ef-7f0da743ded6.png')] bg-[url('/lovable-uploads/23d77528-61aa-41bb-8110-ce5fce1e52e4.png')]">
             <div className="flex items-center w-full h-full">
               <div className="w-1/2 md:w-1/2 lg:w-1/2 px-4 py-8 md:bg-white/70 rounded-lg md:backdrop-blur-md">
-                <h1 className="text-2xl md:text-6xl lg:text-7xl font-bold text-orange-600 text-left drop-shadow-2xl">
+                <h1 className="md:text-6xl lg:text-7xl font-bold text-orange-600 text-left drop-shadow-2xl text-2xl">
                   Celebrate Global <br /> Ganesh Utsav
                 </h1>
                 <p className="mt-4 text-lg text-muted-foreground font-bold hidden md:block">
@@ -124,7 +124,7 @@ const Home = () => {
             <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-3 text-lg font-semibold">
               Create a Reel Now
             </Button>
-          </div> */}
+           </div> */}
         </div>
       </section>
 
@@ -151,7 +151,7 @@ const Home = () => {
               </p>
               {/* <Button onClick={() => scrollToSection('participate')} variant="outline" className="border-orange-500 text-orange-500 hover:bg-orange-50">
                 Submit Your Celebration
-              </Button> */}
+               </Button> */}
             </div>
           </div>
         </div>
